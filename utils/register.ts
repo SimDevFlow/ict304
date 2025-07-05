@@ -4,7 +4,7 @@ import { useVehicleModalStore } from "@/store/state";
 import { toast } from "sonner";
 
 export async function registerUser(name: string, password: string) {
-  const apiUrl = "https://fortunate-nariko-williamslenkeu-1c5c9d04.koyeb.app/auth/register";
+  const apiUrl = "https://cheap-impala-simdevflow-3748da79.koyeb.app/auth/register";
 
   console.log("Tentative d'enregistrement avec :", { name, password });
 
@@ -37,7 +37,7 @@ export async function registerUser(name: string, password: string) {
 
 
 export async function loginUser(name: string, password: string): Promise<void> {
-  const apiUrl = "https://fortunate-nariko-williamslenkeu-1c5c9d04.koyeb.app/auth/login";
+  const apiUrl = "https://cheap-impala-simdevflow-3748da79.koyeb.app/auth/login";
 
   console.log("Tentative de connexion avec :", { name, password });
 
@@ -81,7 +81,7 @@ export async function getVehiclesFromApi(): Promise<void> {
   }
 
   try {
-    const res = await fetch("https://fortunate-nariko-williamslenkeu-1c5c9d04.koyeb.app/api/vehicles", {
+    const res = await fetch("https://cheap-impala-simdevflow-3748da79.koyeb.app/api/vehicles", {
       method: "GET",
       headers: {
         Authorization: `Bearer ${token}`,
@@ -125,7 +125,7 @@ export async function updateVehicle(id: string, updatedData: VehicleUpdatePayloa
   }
 
   try {
-    const res = await fetch(`https://fortunate-nariko-williamslenkeu-1c5c9d04.koyeb.app/api/vehicles/${id}`, {
+    const res = await fetch(`https://cheap-impala-simdevflow-3748da79.koyeb.app/api/vehicles/${id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -162,7 +162,7 @@ export async function deleteVehicle(id: string): Promise<void> {
   }
 
   try {
-    const res = await fetch(`https://fortunate-nariko-williamslenkeu-1c5c9d04.koyeb.app/api/vehicles/${id}`, {
+    const res = await fetch(`https://cheap-impala-simdevflow-3748da79.koyeb.app/api/vehicles/${id}`, {
       method: "DELETE",
       headers: {
         Authorization: `Bearer ${token}`,
@@ -204,7 +204,7 @@ export async function createVehicle(data: VehiclePayload): Promise<void> {
   }
 
   try {
-    const res = await fetch("https://fortunate-nariko-williamslenkeu-1c5c9d04.koyeb.app/api/vehicles", {
+    const res = await fetch("https://cheap-impala-simdevflow-3748da79.koyeb.app/api/vehicles", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

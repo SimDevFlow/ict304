@@ -10,7 +10,7 @@ export async function getUsersFromApi(): Promise<void> {
   }
 
   try {
-    const res = await fetch("https://fortunate-nariko-williamslenkeu-1c5c9d04.koyeb.app/api/users", {
+    const res = await fetch("https://cheap-impala-simdevflow-3748da79.koyeb.app/api/users", {
       method: "GET",
       headers: {
         Authorization: `Bearer ${token}`,
@@ -47,7 +47,7 @@ export async function createUser(data: UserPayload): Promise<void> {
   }
 
   try {
-    const res = await fetch("https://fortunate-nariko-williamslenkeu-1c5c9d04.koyeb.app/api/users", {
+    const res = await fetch("https://cheap-impala-simdevflow-3748da79.koyeb.app/api/users", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -87,7 +87,7 @@ export async function updateUser(id: string, updatedData: UserUpdatePayload): Pr
   }
 
   try {
-    const res = await fetch(`https://fortunate-nariko-williamslenkeu-1c5c9d04.koyeb.app/api/users/${id}`, {
+    const res = await fetch(`https://cheap-impala-simdevflow-3748da79.koyeb.app/api/users/${id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -122,7 +122,7 @@ export async function deleteUser(id: string): Promise<void> {
   }
 
   try {
-    const res = await fetch(`https://fortunate-nariko-williamslenkeu-1c5c9d04.koyeb.app/api/users/${id}`, {
+    const res = await fetch(`https://cheap-impala-simdevflow-3748da79.koyeb.app/api/users/${id}`, {
       method: "DELETE",
       headers: {
         Authorization: `Bearer ${token}`,
